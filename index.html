@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Quiz App </title>
+    </head>
+    <body onload="register()">
+        <div id="div1">
+            <table>
+                <tr>
+                    <th> <a href="#"> Home </a> </th>
+                    <th> <a href="#jjkquiz"> JJK </a> </th>
+                    <th> <a href="#"> One Piece </a> </th>
+                    <th> <a href="#"> Demon Slayer </a> </th>
+                    <th> <a href="#"> Question Bank </a> </th>
+                </tr>
+            </table>
+            <h1 style="padding:70px; text-align:center; opacity:0.3;"> CodeYoung </h1>
+        </div>
+        <h2> Your Name is Registered Below </h2>
+        <p id="welcome"> </p>
+        <div class="quiz-section">
+            <div class="quiz-card">
+                <img src="https://img1.picmix.com/output/stamp/normal/9/5/8/0/2610859_567ec.png" alt="jjk">
+                <p> As a Jujutsu Kaisen fan, you might think you know everything about the popular dark fantasy series...but do you, really? Take this quiz to find out!
+                Answer a series of JJK trivia questions, some basic and some tricky. See how many questions you can get right, and if you really are a Jujutsu Kaisen master!</p>
+                <button onclick="jjkQuiz()"> Start JJK Quiz </button>
+            </div>
+            <div class="quiz-card">
+                <img src="https://wallpapers.com/images/hd/one-piece-title-wbg2f7sm18m86ryk.jpg" alt="one-piece">
+                <p> Have you watched the amazing Japanese Manga series- One Piece? If your answer is yes, how well do you know one piece? From the Straw Hat Pirates to the Grand Line, we have questions that will challenge even the most dedicated fans. Ready to set sail on a thrilling adventure with our One Piece Quiz?
+                </p>
+                <button onclick="onePieceQuiz()"> Start One Piece Quiz</button>
+            </div>
+            <div class="quiz-card">
+                <img src="https://logos-world.net/wp-content/uploads/2021/12/Demon-Slayer-Symbol.png" alt="demon slayer">
+                <p> Welcome to the ultimate Demon Slayer quiz! Are you ready to step into the world of Tanjiro Kamado, Nezuko, and the Demon Slayer Corps? This quiz will challenge your knowledge of the thrilling adventures, powerful breathing techniques, fearsome demons, and unforgettable characters from the award-winning anime and manga series Demon Slayer: Kimetsu no Yaiba..</p>
+                <button onclick="demonSlayer()"> Start Demon Slayer Quiz</button>
+            </div>
+        </div>
+        <hr>
+        <div id="jjkquiz" class="quiz-box">
+            <h3> JJK QUIZ </h3>
+            <p> 1. Who is the strongest of today? </p>
+            <button onclick="rightAnswer()"> Saturo Gojo </button>
+            <button onclick="wrongAnswer()"> Yuji Itadori </button>
+            <button onclick="wrongAnswer()"> Toji Fushigoro </button>
+            <button onclick="wrongAnswer()"> Ryomen Sukana </button>
+            <br>
+            <p> 2.What is the name of the special grade cursed object that Yuji swallows? </p>
+            <button onclick="rightAnswer()"> Sukanas Finger </button>
+            <button onclick="wrongAnswer()"> Cursed Sword </button>
+            <button onclick="wrongAnswer()"> Prison Realm </button>
+            <button onclick="wrongAnswer()"> Ryomen Sukana </button>
+            <br>
+            <p> 3.Nobara Kugisaki primarily fights using which weapon? </p>
+            <button onclick="wrongAnswer()"> Inverted Spear Of Heaven </button>
+            <button onclick="wrongAnswer()"> Playful Cloud </button>
+            <button onclick="rightAnswer()"> Hammer And Nails </button>
+            <button onclick="wrongAnswer()"> Hammer and Straw doll </button>
+        </div>
+        <div id="onepicequiz" class="quiz-box">
+            <h3> One Piece Quiz </h3>
+            <p> 1. The first character to mention the concept of Awakening of Devil Fruits was?  </p>
+            <button onclick="wrongAnswer()"> Dr. Vegapunk </button>
+            <button onclick="wrongAnswer()"> Cake Queen </button>
+            <button onclick="wrongAnswer()"> Kaido </button>
+            <button onclick="rightAnswer()"> Donquixote Doflamingo </button>
+            <br>
+            <p> 2.What is Nami’s weapon called? </p>
+            <button onclick="rightAnswer()"> Clima-Tact </button>
+            <button onclick="wrongAnswer()"> Diable Jambe </button>
+            <button onclick="wrongAnswer()"> Shigan </button>
+            <button onclick="wrongAnswer()"> Geppou </button>
+            <br>
+            <p> 3.Which Devil Fruit is later revealed to be a Mythical Zoan rather than a Paramecia? </p>
+            <button onclick="wrongAnswer()"> Hito Hito no Mi, Model: Daibutsu </button>
+            <button onclick="wrongAnswer()"> Mera Mera no Mi </button>
+            <button onclick="rightAnswer()"> Gomu Gomu no Mi</button>
+            <button onclick="wrongAnswer()"> Gura Gura no Mi </button>
+        </div>
+
+        <div id="demonslayerquiz" class="quiz-box">
+            <h3> Demon Slayer Quiz </h3>
+            <p> 1.What unique trait allows Nezuko to survive without consuming human blood?  </p>
+            <button onclick="wrongAnswer()"> Uses magical crystals </button>
+            <button onclick="wrongAnswer()">  Drains demon energy </button>
+            <button onclick="wrongAnswer()"> Drains demon energy </button>
+            <button onclick="rightAnswer()"> Replenishes energy by sleeping</button>
+            <br>
+            <p> 2.Who trains Tanjiro to become a Demon Slayer with Water Breathing? </p>
+            <button onclick="rightAnswer()"> Clima-Tact </button>
+            <button onclick="wrongAnswer()"> Giyu Tomioka </button>
+            <button onclick="wrongAnswer()"> Kanao Tsuyuri </button>
+            <button onclick="wrongAnswer()"> Tengen Uzui </button>
+            <br>
+            <p> 3.What is the name of Tanjiro’s black Nichirin Blade swordsmith? </p>
+            <button onclick="wrongAnswer()"> Sabito </button>
+            <button onclick="wrongAnswer()"> Kozo Kanamori </button>
+            <button onclick="rightAnswer()"> Hotaru Haganezuka </button>
+            <button onclick="wrongAnswer()"> Murata </button>
+        </div>
+
+        <div id="questionbank" class="quiz-box1">
+            <h3> JJK QUIZ </h3>
+            <p> 1. Who is the strongest of today? </p>
+            <button onclick="rightAnswer()"> Saturo Gojo </button>
+            <button onclick="wrongAnswer()"> Yuji Itadori </button>
+            <button onclick="wrongAnswer()"> Toji Fushigoro </button>
+            <button onclick="wrongAnswer()"> Ryomen Sukana </button>
+            <br>
+            <p> 2.What is the name of the special grade cursed object that Yuji swallows? </p>
+            <button onclick="rightAnswer()"> Sukanas Finger </button>
+            <button onclick="wrongAnswer()"> Cursed Sword </button>
+            <button onclick="wrongAnswer()"> Prison Realm </button>
+            <button onclick="wrongAnswer()"> Ryomen Sukana </button>
+            <br>
+            <p> 3.Nobara Kugisaki primarily fights using which weapon? </p>
+            <button onclick="wrongAnswer()"> Inverted Spear Of Heaven </button>
+            <button onclick="wrongAnswer()"> Playful Cloud </button>
+            <button onclick="rightAnswer()"> Hammer And Nails </button>
+            <button onclick="wrongAnswer()"> Hammer and Straw doll </button>
+            <br>
+            <h3> One Piece Quiz </h3>
+            <p> 1. The first character to mention the concept of Awakening of Devil Fruits was?  </p>
+            <button onclick="wrongAnswer()"> Dr. Vegapunk </button>
+            <button onclick="wrongAnswer()"> Cake Queen </button>
+            <button onclick="wrongAnswer()"> Kaido </button>
+            <button onclick="rightAnswer()"> Donquixote Doflamingo </button>
+            <br>
+            <p> 2.What is Nami’s weapon called? </p>
+            <button onclick="rightAnswer()"> Clima-Tact </button>
+            <button onclick="wrongAnswer()"> Diable Jambe </button>
+            <button onclick="wrongAnswer()"> Shigan </button>
+            <button onclick="wrongAnswer()"> Geppou </button>
+            <br>
+            <p> 3.Which Devil Fruit is later revealed to be a Mythical Zoan rather than a Paramecia? </p>
+            <button onclick="wrongAnswer()"> Hito Hito no Mi, Model: Daibutsu </button>
+            <button onclick="wrongAnswer()"> Mera Mera no Mi </button>
+            <button onclick="rightAnswer()"> Gomu Gomu no Mi</button>
+            <button onclick="wrongAnswer()"> Gura Gura no Mi </button>
+            <h3> Demon Slayer Quiz </h3>
+            <p> 1.What unique trait allows Nezuko to survive without consuming human blood?  </p>
+            <button onclick="wrongAnswer()"> Uses magical crystals </button>
+            <button onclick="wrongAnswer()">  Drains demon energy </button>
+            <button onclick="wrongAnswer()"> Drains demon energy </button>
+            <button onclick="rightAnswer()"> Replenishes energy by sleeping</button>
+            <br>
+            <p> 2.Who trains Tanjiro to become a Demon Slayer with Water Breathing? </p>
+            <button onclick="rightAnswer()"> Clima-Tact </button>
+            <button onclick="wrongAnswer()"> Giyu Tomioka </button>
+            <button onclick="wrongAnswer()"> Kanao Tsuyuri </button>
+            <button onclick="wrongAnswer()"> Tengen Uzui </button>
+            <br>
+            <p> 3.What is the name of Tanjiro’s black Nichirin Blade swordsmith? </p>
+            <button onclick="wrongAnswer()"> Sabito </button>
+            <button onclick="wrongAnswer()"> Kozo Kanamori </button>
+            <button onclick="rightAnswer()"> Hotaru Haganezuka </button>
+            <button onclick="wrongAnswer()"> Murata </button>
+        </div>
+    </body>
+    <script>
+        function register(){
+            let name = prompt("Register Your Name For The Quiz ");
+            if (name === null || name.trim() === ""){
+                name = "Guest";
+            }
+
+            document.getElementById("welcome").innerHTML = "Hello " + name + " , Welcome to Tech Learner Your name is now registered";
+            document.getElementById("div1").style.backgroundImage = "url(https://gifdb.com/images/high/question-mark-animation-googly-eyes-8i2uhyawe8shl4pw.gif)";
+        }
+        
+        function wrongAnswer(){
+            alert("WRONG❌ Try again");
+        }
+        function rightAnswer(){
+            alert("correct✅");
+        }
+
+        function jjkQuiz(){
+            hideAll();
+            document.getElementById("jjkquiz").style.display = "block";
+        }
+
+        function onePieceQuiz(){
+            hideAll();
+            document.getElementById("onepiecequiz").style.display = "block";
+        }
+
+        function demonSlayer(){
+            hideAll();
+            document.getElementById("demonslayerquiz").style.display = "block";
+        }
+
+        function hideAll(){
+             document.getElementById("demonslayerquiz").style.display = "none";
+             document.getElementById("onepiecequiz").style.display = "none";
+             document.getElementById("jjkquiz").style.display = "none";
+        }
+
+
+    </script>
+</html>
